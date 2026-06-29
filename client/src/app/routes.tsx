@@ -26,7 +26,7 @@ import { QueueStatusPage } from "../page/queue-status";
 import { SearchPage } from "../page/search";
 import { Settings } from "../page/settings";
 import { TimelinePage } from "../page/timeline";
-import { entry } from "../page/entry";
+import { EntryPage } from "../page/entry";
 import { WritingPage } from "../page/writing";
 import { ProfileContext } from "../state/profile";
 import { tryInt } from "../utils/int";
@@ -45,16 +45,16 @@ export function AppRoutes() {
         <TimelinePage />
       </AppRoute>
 
+      <AppRoute path="/entry">
+        <EntryPage />
+      </AppRoute>
+
       <AppRoute path="/moments">
         <MomentsPage />
       </AppRoute>
 
       <AppRoute path="/friends">
         <FriendsPage />
-      </AppRoute>
-
-      <AppRoute path="/entry">
-        <entry />
       </AppRoute>
 
       <AppRoute path="/hashtags">
