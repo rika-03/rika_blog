@@ -53,6 +53,10 @@ export function AppRoutes() {
         <FriendsPage />
       </AppRoute>
 
+      <AppRoute path="/entry">
+        <entry />
+      </AppRoute>
+
       <AppRoute path="/hashtags">
         <HashtagsPage />
       </AppRoute>
