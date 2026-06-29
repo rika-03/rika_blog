@@ -28,6 +28,7 @@ import { Settings } from "../page/settings";
 import { TimelinePage } from "../page/timeline";
 import { EntryPage } from "../page/entry";
 import { WritingPage } from "../page/writing";
+import { RikaPage } from "../page/rika";
 import { ProfileContext } from "../state/profile";
 import { tryInt } from "../utils/int";
 import { useTranslation } from "react-i18next";
@@ -87,6 +88,10 @@ export function AppRoutes() {
 
       <AdminRoute path="/admin/writing" requirePermission title={t("writing")} description={t("admin.writing_description")}>
         <WritingPage />
+      </AdminRoute>
+
+      <AdminRoute path="/admin/rika" requirePermission title={t("rika")} description={t("admin.rika_description")}>
+        <RikaPage />
       </AdminRoute>
 
       <AdminRoute path="/admin/writing/:id" requirePermission title={t("writing")} description={t("admin.writing_description")}>
