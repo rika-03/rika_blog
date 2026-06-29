@@ -21,7 +21,7 @@ export function NavBar({
       <NavItem menu={menu} onClick={onClick} itemClassName={itemClassName} title={t("hashtags")} selected={location === "/hashtags"} href="/hashtags" />
       <NavItem menu={menu} onClick={onClick} itemClassName={itemClassName} title={t("friends.title")} selected={location === "/friends"} href="/friends" />
       <NavItem menu={menu} onClick={onClick} itemClassName={itemClassName} title={t("about.title")} selected={location === "/about"} href="/about" />
-      <NavItem menu={menu} onClick={onClick} itemClassName={itemClassName} title={t("entry.title")} selected={location === "/entry"} href="/entry" />
+      <NavItem menu={menu} onClick={onClick} itemClassName={itemClassName} title={t("entry")} selected={location === "/entry"} href="/entry" />
     </>
   );
 }
